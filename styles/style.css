@@ -1,0 +1,723 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+@font-face {
+  font-family: "GothamSSM";
+  src: url("../assets/fonts/GothamSSm-Bold_Web.woff2") format("woff2"),
+    url("../assets/fonts/GothamSSm-Book_Web.woff2") format("woff2"),
+    url("../assets/fonts/GothamSSm-Light_Web.woff2") format("woff2"),
+    url("../assets/fonts/GothamSSm-Medium_Web.woff2") format("woff2");
+}
+
+body {
+  font-family: "GothamSSM", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+}
+.header a {
+  position: relative;
+  color: white;
+}
+.cont_page1 {
+  background: url("../assets/img/M3-Hero-LHD-US-D.jpg") no-repeat right 50%
+    bottom 66% / cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.clr {
+  clear: both;
+}
+.test {
+  height: 40px;
+  border: lawngreen 2px solid;
+}
+
+.center {
+  right: 467px;
+  top: 2px;
+}
+.right {
+  right: 25px;
+  top: 2px;
+}
+.navbar {
+  list-style: none;
+  margin: 9px;
+  padding: 0;
+  color: white;
+  position: absolute;
+}
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  display: block;
+  padding: 5.5px 14px;
+}
+.navbar li a:hover {
+  background-color: #6d737f;
+  opacity: 0.73;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.logo {
+  width: 123px;
+  position: sticky;
+  left: 47px;
+  top: 7px;
+  z-index: 1;
+}
+.name {
+  font-family: "GothamSSM", sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 48px;
+  position: absolute;
+  left: 691px;
+  top: 114px;
+}
+
+.orderNow {
+  font-family: "GothamSSM", sans-serif;
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  border: 3px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  top: 604px;
+  left: 933px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 14px;
+  padding: 10px 34px;
+  text-align: center;
+}
+.orderNow:hover {
+  color: black;
+  background: white;
+  transition: 0.3s;
+}
+.chat {
+  position: fixed;
+  top: 590px;
+  left: 1450px;
+  background: white;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 12px;
+  z-index: 1;
+}
+
+.leftNav {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  font-size: 10px;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  margin-left: 20px;
+  top: 240px;
+  left: 0px;
+  z-index: 1;
+  border-left: 4px rgb(209, 204, 204) dashed;
+}
+
+.leftNav li a {
+  display: block;
+  opacity: 0;
+  color: #a5acac;
+}
+.leftNav li a:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.awd h1 {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  top: 597px;
+  left: 814px;
+  color: white;
+}
+.awd p {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  top: 637px;
+  left: 816px;
+  color: white;
+}
+#miles {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  top: 597px;
+  left: 646px;
+  color: white;
+}
+#miles1 {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+  color: white;
+}
+#Range {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  top: 637px;
+  left: 636px;
+  color: white;
+}
+#mph {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  top: 637px;
+  left: 495px;
+  color: white;
+}
+#sec {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  top: 597px;
+  left: 515px;
+  color: white;
+}
+#sec1 {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 32px;
+}
+
+#speedometer {
+  width: 40px;
+  position: absolute;
+  left: 468px;
+  top: 602px;
+}
+.invert {
+  filter: invert(100%);
+}
+#dial {
+  width: 40px;
+  position: absolute;
+  left: 474px;
+  top: 630px;
+  z-index: 1;
+}
+.half-circle {
+  width: 30px;
+  height: 15px;
+  background-color: #5b606b;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0;
+  position: absolute;
+  left: 473px;
+  top: 609px;
+  opacity: 0.65;
+  z-index: 0;
+}
+#arrow {
+  position: absolute;
+  left: 765px;
+  top: 670px;
+  font-size: 35px;
+  font-weight: bold;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#arrow a {
+  color: white;
+}
+.transform {
+  transform: rotate(90deg);
+}
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.picture {
+  background-image: url("../assets/img/secondPageBackground.png");
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 0%;
+  background-size: cover;
+  max-width: 910px;
+  height: 722px;
+}
+.stickImpact {
+  position: absolute;
+  color: #181b21;
+  border-left: black 2px solid;
+  top: 100px;
+  left: 570px;
+  height: 250px;
+  width: 140px;
+}
+.stickRigid {
+  position: absolute;
+  color: #181b21;
+  border-left: black 2px solid;
+  top: 50px;
+  left: 820px;
+  height: 120px;
+  width: 140px;
+}
+.stickRisk {
+  position: absolute;
+  color: #181b21;
+
+  border-left: black 2px solid;
+  top: 410px;
+  left: 864px;
+  height: 140px;
+  width: 3px;
+}
+.stickRiskText {
+  position: absolute;
+  color: #181b21;
+
+  top: 532px;
+  left: 870px;
+  height: 140px;
+  width: 180px;
+}
+.info {
+  height: 722px;
+  max-width: 385px;
+}
+.picture {
+  float: right;
+  width: 57%;
+  margin-right: 230px;
+}
+.info {
+  float: right;
+  width: 35%;
+}
+
+.text p {
+  margin-top: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 17px;
+  color: #181b21;
+
+  text-align: left;
+}
+.text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  color: #181b21;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.text span {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: #181b21;
+  text-align: left;
+}
+.rating h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+  color: #181b21;
+  text-align: center;
+}
+
+.rating li {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 21px;
+  color: #181b21;
+  text-align: left;
+  list-style: none;
+}
+.rating li h6 {
+  font-size: 8px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 8px;
+  color: #181b21;
+  text-align: left;
+}
+.rating {
+  background: #e2e4e4;
+  border-radius: 15px;
+  padding: 25px 22px;
+  margin-top: 17px;
+}
+.text {
+  margin-right: 40px;
+}
+.rating ul {
+  text-align: center;
+}
+
+.orderNow2 {
+  font-family: "GothamSSM", sans-serif;
+
+  background: transparent;
+  color: black;
+  border: 3px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 14px;
+  padding: 10px 15px;
+  text-align: center;
+  float: right;
+  width: 40%;
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+.orderNow2:hover {
+  color: white;
+  background: black;
+  transition: 0.3s;
+}
+.btnPlus {
+  font-family: "GothamSSM", sans-serif;
+  background: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  float: left;
+  display: block;
+  margin-top: 41px;
+}
+.btnPlus:hover {
+  color: white;
+  background: black;
+  transition: 0.3s;
+}
+
+#learn a {
+  color: #a5acac;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 21px;
+  float: right;
+  width: 30%;
+  display: block;
+  margin-top: 50px;
+  margin-right: 12px;
+}
+#page3 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.pic3 {
+  background: url("../assets/img/thirdPageBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100vw;
+  height: 65vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#arrow3 {
+  color: black;
+  position: absolute;
+  right: 40px;
+  top: 28px;
+  font-size: 35px;
+  font-weight: bold;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#arrow3 a {
+  color: black;
+}
+
+#arrow2 {
+  color: black;
+  position: absolute;
+  right: 40px;
+  top: 28px;
+  font-size: 35px;
+  font-weight: bold;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#arrow2 a {
+  color: black;
+}
+.textPage3 {
+  color: #393c41;
+  float: right;
+  width: 32%;
+  display: block;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  text-align: left;
+  margin-top: 50px;
+  margin-right: 300px;
+}
+.perform {
+  color: #181b21;
+
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 17px;
+  text-align: left;
+  margin-top: 46px;
+  margin-left: 275px;
+}
+.perform h2 {
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  text-align: left;
+}
+.perform h3 {
+  font-size: 17px;
+  color: #181b21;
+
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 17px;
+  text-align: left;
+}
+
+.orderNow3 {
+  font-family: "GothamSSM", sans-serif;
+
+  color: black;
+  border: 3px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 17px;
+  margin-right: 160px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 14px;
+  padding: 10px 5px;
+  text-align: center;
+  float: right;
+  width: 9%;
+  display: block;
+}
+.orderNow3:hover {
+  color: white;
+  background: black;
+  transition: 0.3s;
+}
+.btnPlus1 {
+  font-family: "GothamSSM", sans-serif;
+  background: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  float: left;
+  display: block;
+  margin-top: 17px;
+  margin-left: 275px;
+  width: 3%;
+}
+.btnPlus1:hover {
+  color: white;
+  background: black;
+  transition: 0.3s;
+}
+
+#learn1 a {
+  color: #a5acac;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 21px;
+  float: right;
+  width: 10%;
+  display: block;
+  margin-top: 28px;
+  margin-right: -47px;
+}
+.awdc h1 {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  top: 320px;
+  left: 1050px;
+  color: white;
+  z-index: 1;
+}
+.awdc p {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  top: 365px;
+  left: 950px;
+  color: white;
+  z-index: 1;
+  text-align: left;
+}
+#milesc {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  top: 320px;
+  left: 700px;
+  color: white;
+  z-index: 1;
+}
+#miles1c {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+  color: white;
+  z-index: 1;
+}
+#Rangec {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  top: 365px;
+  left: 600px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+#mphc {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  top: 365px;
+  left: 220px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+#secc {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  top: 320px;
+  left: 370px;
+  color: white;
+  z-index: 1;
+}
+#sec1c {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 32px;
+  z-index: 1;
+}
+
+#speedometerc {
+  width: 40px;
+  position: absolute;
+  left: 320px;
+  top: 324px;
+  z-index: 1;
+}
+
+#dialc {
+  width: 40px;
+  position: absolute;
+  left: 328px;
+  top: 354px;
+  z-index: 2;
+}
+.half-circlec {
+  width: 30px;
+  height: 15px;
+  background-color: #5b606b;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0;
+  position: absolute;
+  left: 325px;
+  top: 333px;
+  opacity: 0.65;
+
+  z-index: 1;
+}
